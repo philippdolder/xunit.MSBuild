@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>xunit.MSBuild</id>
+    <version>1.9.2</version>
+    <authors>Philipp Dolder</authors>
+    <owners>Philipp Dolder</owners>
+	<projectUrl>https://github.com/philippdolder/xunit.MSBuild</projectUrl>
+	<iconUrl>https://github.com/philippdolder/xunit.MSBuild/blob/master/xunit.msbuild.png</iconUrl>
+	<licenseUrl>https://github.com/philippdolder/xunit.MSBuild/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>MSBuild integration for xUnit</summary>
+    <description>Runs xunit tests using the official xunit MSBuild task in the AfterBuild target.</description>
+    <copyright>Copyright (c) Philipp Dolder (@philippdolder)</copyright>
+    <tags>xunit build msbuild integration runner test</tags>
+    <developmentDependency>true</developmentDependency>
+    <dependencies>
+      <dependency id="xUnit" version="1.9.2"/>
+	</dependencies>	
+	<files>
+      <file source="LICENSE" target="LICENSE" />
+      <file source="README.md" target="README.md" />
+      <file source="build\**\*.*" target="build" />
+      <file source="tools\**\*.*" target="tools" />
+	</files>
+  </metadata>
+</package>

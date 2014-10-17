@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask AssemblyFile="$(MSBuildThisFileDirectory)..\tools\xunit.runner.msbuild.dll" TaskName="Xunit.Runner.MSBuild.xunit" />
+  <Target Name="AfterBuild">
+    <xunit Condition="'$(Configuration)' == 'Release'" Assembly="$(OutputPath)$(AssemblyName).dll" />
+  </Target>
+</Project>
