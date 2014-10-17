@@ -10,7 +10,7 @@
 	<licenseUrl>https://github.com/philippdolder/xunit.MSBuild/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>MSBuild integration for xUnit</summary>
-    <description>Runs xunit tests using the official xunit MSBuild task in the AfterBuild target.</description>
+    <description>Runs xunit tests using the official xunit MSBuild task with every build (by default, in Release builds only). Includes official xUnit MSBuild task binaries</description>
     <copyright>Copyright (c) Philipp Dolder (@philippdolder)</copyright>
     <tags>xunit build msbuild integration runner test</tags>
     <developmentDependency>true</developmentDependency>
