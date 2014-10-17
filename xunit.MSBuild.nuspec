@@ -17,11 +17,11 @@
     <dependencies>
       <dependency id="xUnit" version="1.9.2"/>
 	</dependencies>	
-	<files>
-      <file source="LICENSE" target="LICENSE" />
-      <file source="README.md" target="README.md" />
-      <file source="build\**\*.*" target="build" />
-      <file source="tools\**\*.*" target="tools" />
-	</files>
   </metadata>
+  <files>
+    <file src="LICENSE" target="LICENSE" />
+    <file src="README.md" target="README.md" />
+    <file src="build\**\*.*" target="build" />
+    <file src="tools\**\*.*" target="tools" />
+  </files>
 </package>

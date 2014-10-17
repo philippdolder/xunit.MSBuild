@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(RunXunitTests)' == ''">
+    <RunXunitTests Condition="'$(Configuration)' == 'Release'">true</RunXunitTests>
+  </PropertyGroup>
+
   <UsingTask AssemblyFile="$(MSBuildThisFileDirectory)..\tools\xunit.runner.msbuild.dll" TaskName="Xunit.Runner.MSBuild.xunit" />
   <Target Name="AfterBuild">
-    <xunit Condition="'$(Configuration)' == 'Release'" Assembly="$(OutputPath)$(AssemblyName).dll" />
+    <xunit Condition="'$(RunXunitTests)' == 'true'" Assembly="$(OutputPath)$(AssemblyName).dll" />
   </Target>
 </Project>
