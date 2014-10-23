@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <BuildDependsOn>$(BuildDependsOn);ExecuteXUnitTests<BuildDependsOn>
-    <RebuildDependsOn>$(RebuildDependsOn);ExecuteXUnitTests<RebuildDependsOn>
+    <BuildDependsOn>$(BuildDependsOn);ExecuteXUnitTests</BuildDependsOn>
+    <RebuildDependsOn>$(RebuildDependsOn);ExecuteXUnitTests</RebuildDependsOn>
   </PropertyGroup>
   
-  <Target Name="ExecutXUnitTests" Condition="'$(RunXunitTests)' == 'true'" >
+  <Target Name="ExecuteXUnitTests" Condition="'$(RunXunitTests)' == 'true'" >
     <xunit Assembly="$(OutputPath)$(AssemblyName).dll" />
   </Target>
 </Project>
