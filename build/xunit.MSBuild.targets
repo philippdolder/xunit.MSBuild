@@ -12,6 +12,6 @@
   </PropertyGroup>
   
   <Target Name="ExecuteXUnitTests" Condition="'$(RunXunitTests)' == 'true'" >
-    <xunit Assembly="$(OutputPath)$(AssemblyName).dll" />
+    <xunit Assemblies="$(OutputPath)$(AssemblyName).dll" />
   </Target>
 </Project>
